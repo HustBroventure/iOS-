@@ -45,8 +45,6 @@
 
     }
 
-
-
     self.bounds = newBounds;
 
 }

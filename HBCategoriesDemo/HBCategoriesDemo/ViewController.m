@@ -10,6 +10,8 @@
 #import "UIButton+HB.h"
 #import "UILabel+HB.h"
 #import "UIColor+HB.h"
+#import "UIImage+Blur.h"
+#import "UIApplication+KeyboardFrame.h"
 @interface ViewController ()
 @property (nonatomic, strong) UILabel* midLabel;
 @property (nonatomic, strong) UIButton* confirmButton;
@@ -37,6 +39,13 @@
 
     self.view.backgroundColor = [UIColor gradientFromColor:[UIColor greenColor] toColor:[UIColor blackColor] withHeight:self.view.frame.size.height];
 
+    UIVisualEffectView *visualEffect = [[UIVisualEffectView alloc]initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleExtraLight]];
+
+    visualEffect.frame = CGRectMake(20, 90, 280, 300);
+
+    visualEffect.alpha = 0.9;
+
+    [self.view addSubview:visualEffect];
 }
 
 -(void)viewWillAppear:(BOOL)animated
@@ -51,7 +60,6 @@
 #pragma mark - private-tools methords
 - (void)initData
 {
-
 }
 #pragma mark - property-setter-getter
 -(UILabel *)midLabel
@@ -118,6 +126,8 @@
         //self.midLabel.text = @"自动改变的label 还有谁自动改变的label 还有谁自动改变的label 还有谁自动改变的label 还有谁自动改变的label 还有谁";
         [self.midLabel resizeLabelBoundsWithNewText:@"自动改变的label 还有谁自动改变的label 还有谁自动改变的label 还有谁自动改变的label 还有谁自动改变的label 还有谁" maxWidth:self.view.frame.size.width];
     self.topImageView.image = [UIImage imageNamed:@"11"];
+    NSLog(@"%@",NSStringFromCGRect([[UIApplication sharedApplication] keyboardFrame]));
+
 
 }
 #pragma mark - delegate methords

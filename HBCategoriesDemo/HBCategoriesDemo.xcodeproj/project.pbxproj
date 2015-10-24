@@ -29,6 +29,8 @@
 		0A69E8851BD372D30054FEA7 /* UIView+HB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A69E8841BD372D30054FEA7 /* UIView+HB.m */; };
 		0A69E8881BD372E80054FEA7 /* UIImage+HB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A69E8871BD372E80054FEA7 /* UIImage+HB.m */; };
 		0A69E88B1BD372F90054FEA7 /* UIColor+HB.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A69E88A1BD372F90054FEA7 /* UIColor+HB.m */; };
+		0ACF129A1BDB663700FFB8E6 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF12991BDB663700FFB8E6 /* Config.m */; };
+		0ACF129D1BDB76C100FFB8E6 /* UIApplication+KeyboardFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ACF129C1BDB76C100FFB8E6 /* UIApplication+KeyboardFrame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,11 @@
 		0A69E8871BD372E80054FEA7 /* UIImage+HB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HB.m"; sourceTree = "<group>"; };
 		0A69E8891BD372F90054FEA7 /* UIColor+HB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HB.h"; sourceTree = "<group>"; };
 		0A69E88A1BD372F90054FEA7 /* UIColor+HB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HB.m"; sourceTree = "<group>"; };
+		0ACF12971BDB61EF00FFB8E6 /* Config+HB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Config+HB.h"; sourceTree = "<group>"; };
+		0ACF12981BDB663700FFB8E6 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		0ACF12991BDB663700FFB8E6 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		0ACF129B1BDB76C100FFB8E6 /* UIApplication+KeyboardFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+KeyboardFrame.h"; sourceTree = "<group>"; };
+		0ACF129C1BDB76C100FFB8E6 /* UIApplication+KeyboardFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+KeyboardFrame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,17 +194,10 @@
 		0A69E8701BD3716E0054FEA7 /* HBCategpries */ = {
 			isa = PBXGroup;
 			children = (
+				0ACF12961BDB618E00FFB8E6 /* Others */,
 				0A69E8761BD372410054FEA7 /* UIKit+HB */,
-				0A69E8721BD371B90054FEA7 /* Foundation+HB */,
 			);
 			path = HBCategpries;
-			sourceTree = "<group>";
-		};
-		0A69E8721BD371B90054FEA7 /* Foundation+HB */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Foundation+HB";
 			sourceTree = "<group>";
 		};
 		0A69E8761BD372410054FEA7 /* UIKit+HB */ = {
@@ -220,6 +220,18 @@
 				0A1178EE1BD3C6250032F8B3 /* UIImage+Blur.m */,
 			);
 			path = "UIKit+HB";
+			sourceTree = "<group>";
+		};
+		0ACF12961BDB618E00FFB8E6 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				0ACF129B1BDB76C100FFB8E6 /* UIApplication+KeyboardFrame.h */,
+				0ACF129C1BDB76C100FFB8E6 /* UIApplication+KeyboardFrame.m */,
+				0ACF12971BDB61EF00FFB8E6 /* Config+HB.h */,
+				0ACF12981BDB663700FFB8E6 /* Config.h */,
+				0ACF12991BDB663700FFB8E6 /* Config.m */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,10 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A1179011BD3C8110032F8B3 /* UIButton+Submitting.m in Sources */,
+				0ACF129D1BDB76C100FFB8E6 /* UIApplication+KeyboardFrame.m in Sources */,
 				0A69E8531BD3715A0054FEA7 /* ViewController.m in Sources */,
 				0A1179001BD3C8110032F8B3 /* UIButton+Indicator.m in Sources */,
 				0A1178FD1BD3C8110032F8B3 /* UIButton+BackgroundColor.m in Sources */,
 				0A69E87C1BD372930054FEA7 /* UIButton+HB.m in Sources */,
+				0ACF129A1BDB663700FFB8E6 /* Config.m in Sources */,
 				0A1178FE1BD3C8110032F8B3 /* UIButton+Block.m in Sources */,
 				0A1178EF1BD3C6250032F8B3 /* UIImage+Blur.m in Sources */,
 				0A1178FF1BD3C8110032F8B3 /* UIButton+CountDown.m in Sources */,
