@@ -8,6 +8,31 @@
 #import <Foundation/Foundation.h>
 #pragma mark 0 直接量得到对象
 
+
+#pragma mark - OutLine
+
+1. NSString, NSMutableString ,NSSCanner
+
+2. NSDate, NSCalendar, NSDateComponents,
+
+3. NSArray, NSDictionary, NSPredict
+
+4. NSData
+
+5. NSURL, NSURLComponents
+
+6. NSURLSession, NSURLRequest,
+
+7. NSFileHandler
+
+8. NSRegularExpression
+
+
+
+
+
+
+
 -(void)soulution
 {
     NSString* string = @"string";
@@ -91,5 +116,22 @@ int value = arc4random() % x;
 		推荐使用下边这种。
 int value =arc4random_uniform(x ＋ 1);
 		生成随机正整数
+6  2.ARC
 
+1> copy : 只用于NSString\block；
 
+2> strong : 除NSString\block以外的OC对象；
+
+3> weak : 当2个对象相互引用，一端用strong，一端用weak；
+
+4> assgin : 基本数据类型、枚举、结构体（非OC对象）。
+
+#prama mark -  延迟执行某段代码
+    //延迟GCD
+- (void)dispanchTimerWithTime:(int)time Block:(void(^)(void))block
+{
+    dispatch_time_t tim = dispatch_time(DISPATCH_TIME_NOW,(int64_t)(time*NSEC_PER_SEC));
+    dispatch_after(tim,dispatch_get_main_queue(), ^{
+                   block();
+    });
+}
